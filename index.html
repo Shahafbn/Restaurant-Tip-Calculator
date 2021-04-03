@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Tajawal:wght@300&display=swap" rel="stylesheet">
+    <link href="restaurant.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <script src="restaurant.js"></script>
+  </head>
+<body> <!-- is-centered is-half-->
+<h1 align="center">Bonjour</h1>
+<div class="columns is-centered">
+<div class="column is-half">
+<div class="container is-fluid">
+<div class="box">
+<div class="field">
+
+<!--Meal Price-->
+
+  <label class="label">Insert total meal price</label>
+  <div class="control">
+    <input id="meal" class="input" type="number"  min="1">
+  </div>
+</div>
+
+<!--Number Of Diners-->
+
+<div class="field">
+  <label class="label">Insert number of diners</label>
+  <div class="control">
+    <input id="diners" class="input" type="number"  min="1" max="25">
+  </div>
+</div>
+
+
+<!--Serive Quality-->
+
+<div class="field">
+  <label class="label">Choose Service Quality</label>
+  <div class="control">
+    <div class="select">
+      <select id="quality">
+        <option value="1">1 - Bad</option>
+        <option value="2">2 - Average</option>
+        <option value="3">3 - Good</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+<!--Submit Button-->
+
+<div class="control">
+  <button class="button is-warning" onclick="tipInput()">Submit</button>
+</div>
+
+<div id="outputBox" hidden>
+  <br>
+<div class="notification is-warning is-light">
+  <button class="delete" onclick="closeOutputBox()"></button>
+    Each diner has to tip <strong id="tip"></strong>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--Row 1-->
+<!--
+<label>Insert meal price</label>
+<td><input type="number" id="meal" name="meal" min="1"></td> meal price 
+-->
+
+
+<!-- row 2-->
+<!--
+  <td><label>Insert number of diners</label></td>
+  <td><input type="number" id="diners" name="diners" min="1" max="25"></td>
+-->
+
+
+<!--row 3-->
+<!--
+  <label>Choose service quality</label>
+  <select name="service" id="service">
+    <option value="1">1 - Bad</option>
+    <option value="2">2 - Average</option>
+    <option value="3">3 - Good</option>
+  </select>
+-->
+
+<!-- Row 4 button-->
+<!--<input type="submit" value="Bon Apetite!">-->
+
+
+
+<!--ככה:
+קודם לצאת מעולם הטפסים 
+לעבור מכפתור אל דיב (בכפתור 
+
+בלחיצה על כפתור, להציג VALUE
+של האינפוט הראשון דרך אלרט-->
+
+</body>
+</html>
